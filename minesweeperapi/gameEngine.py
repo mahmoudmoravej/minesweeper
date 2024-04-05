@@ -6,7 +6,7 @@ import json
 
 import random
 
-bombs_percentage = 2
+bombs_percentage = 10
 
 games = []
 
@@ -16,7 +16,7 @@ def createGame(rows, cols, player):
 
     game = {
         "id": len(games) + 1,
-        "player": player,
+        "player": player if player else "Anonymous",
         "cells": board["cells"],
         "bombsCount": board["bombsCount"],
         "result": "active",

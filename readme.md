@@ -1,6 +1,7 @@
 # How to run?
 -  in `my site` folder run `yarn dev`. Yes, I love it, even it  is Python :)
--  in `minesweeper` folder run `yarn install` and then `yarn dev`. ok!
+-  in `minesweeper` folder run `yarn install` and then `yarn start`. ok!
+- then check `http://localhost:3000/` to play the game.  
 
 # Initial thoughts/design (whiteboard) 
 
@@ -58,6 +59,7 @@ NOTE! Some of these have changed.
 - Note! You may noticed two api calls, it is because of </React.StrictMode>. Not a performance issue :)
 - Stop doing parallel actions (i.e. playCell call). Wait for getting the one's response before doing the next.
 - Use routing. Current version just keep both New and Old games rendering in one page and changed the url to support reloading, or continuing the game. With a routing system it is easier to separate scenarios.
+- Validations are missed! Anonymous can play! 
 
 # Notes
 - I studied Python for ~2 hours before starting this projects. I will defenetiely refactor coding structure by getting more familiar with classess and modules concepts.
