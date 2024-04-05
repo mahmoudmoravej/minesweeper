@@ -1,0 +1,14 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "python3 manage.py runserver",
+    "startapp": "python3 manage.py startapp",
+    "migrate": "python3 manage.py migrate",
+    "makemigrations": "python3 manage.py makemigrations",
+    "shell": "python3 manage.py shell",
+    "createsuperuser": "python3 manage.py createsuperuser"
+  }
+}

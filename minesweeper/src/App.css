@@ -1,0 +1,79 @@
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.toolbar {
+  padding: 5px;
+
+  width: 300px;
+}
+
+.game {
+  flex: 1;
+}
+
+.newGame {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newGame > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.gameInfo {
+  padding: 5px;
+  background-color: rgb(120, 120, 151);
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 0.5px solid black;
+
+  cursor: pointer;
+}
+
+.cell.notPlayed {
+  background-color: #e0e0e0;
+}
+
+.cell.played,
+.cell.finished {
+  background-color: #afefad;
+}
+
+.cell.notPlayed:hover {
+  background-color: #f2ea7a;
+}
+
+.leaderboard {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.rules {
+  text-align: left;
+}
